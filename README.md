@@ -35,6 +35,20 @@ POST /api/Policy/ApprovedPolicyInfo/{policyNumber}
 8. Click Execute.
 9. Review the HTTP status code and response body.
 
+
+## Verified Web API Output
+A manual Swagger test was completed successfully using policy number `34343538`.
+
+- Endpoint: `POST /api/Policy/ApprovedPolicyInfo/34343538`
+- Result: `200 OK`
+- Policy: `Blue Waters Inc.`
+- Approved coverage: `Auto`
+- Available premium: `8000`
+
+![Swagger successful policy lookup](docs/images/swagger-policy-success.png)
+
+For the full request/response example and additional test cases, see [API Testing Results](docs/API_TESTING.md).
+
 ## Request Flow
 Client / Swagger
     -> PolicyController

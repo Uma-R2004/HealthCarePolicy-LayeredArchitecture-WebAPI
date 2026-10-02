@@ -81,3 +81,15 @@ Suggested repository name:
 HealthCarePolicy-LayeredArchitecture-WebAPI
 
 Do not publish secrets, passwords, API keys, certificates, or sensitive healthcare/patient information.
+
+
+VERIFIED WEB API TEST
+---------------------
+Swagger test executed successfully for policy number 34343538.
+Endpoint: POST /api/Policy/ApprovedPolicyInfo/34343538
+Result: HTTP 200 OK
+Returned policy: Blue Waters Inc.
+Approved coverage: Auto
+Available premium: 8000
+Detailed testing documentation: docs/API_TESTING.md
+Swagger screenshot: docs/images/swagger-policy-success.png
