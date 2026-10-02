@@ -1,0 +1,83 @@
+HealthCarePolicy Layered Architecture Web API
+=============================================
+
+PROJECT
+-------
+ApprovedPolicyInfoSkillsEval
+
+PURPOSE
+-------
+A .NET 8 ASP.NET Core Web API demonstrating layered application design for healthcare policy information processing.
+
+MAIN COMPONENTS
+---------------
+Controllers
+- PolicyController.cs
+- Receives HTTP requests and returns API responses.
+
+Services
+- IPolicyDataService.cs
+- PolicyDataService.cs
+- Provides policy-related service/data operations.
+
+Models
+- Policy.cs
+- Represents policy information.
+
+Validators
+- PolicyValidator.cs
+- PremiumValidator.cs
+- Contains reusable validation rules.
+
+Middleware
+- AccessLogMiddleware.cs
+- Handles cross-cutting access logging.
+
+Tests
+- ApprovedPolicyInfoSkillsEval.Test
+- Uses xUnit for automated tests.
+
+MAIN API
+--------
+POST /api/Policy/ApprovedPolicyInfo/{policyNumber}
+
+SWAGGER
+-------
+https://localhost:49700/swagger/index.html
+
+HOW TO TEST
+-----------
+1. Run the Web API from Visual Studio.
+2. Open Swagger.
+3. Expand POST /api/Policy/ApprovedPolicyInfo/{policyNumber}.
+4. Click Try it out.
+5. Enter a policy number that exists in the application data.
+6. Click Execute.
+7. Verify the HTTP response code and response body.
+8. Repeat with invalid/non-existing input for negative testing.
+
+REQUEST FLOW
+------------
+Swagger / Client
+    -> PolicyController
+    -> Validators
+    -> IPolicyDataService
+    -> PolicyDataService
+    -> Policy Model / Data
+    -> HTTP Response
+
+TECHNOLOGY
+----------
+.NET 8
+ASP.NET Core Web API
+C#
+Swagger / OpenAPI
+xUnit
+Visual Studio 2022
+
+GITHUB
+------
+Suggested repository name:
+HealthCarePolicy-LayeredArchitecture-WebAPI
+
+Do not publish secrets, passwords, API keys, certificates, or sensitive healthcare/patient information.

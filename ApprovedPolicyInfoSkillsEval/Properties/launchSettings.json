@@ -1,0 +1,29 @@
+{
+  "profiles": {
+    "ApprovedPolicyInfoSkillsEval": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:49700;http://localhost:5055"
+    }
+  }
+}
+
+
+
+//{
+//  "profiles": {
+//    "ApprovedPolicyInfoSkillsEval": {
+//      "commandName": "Project",
+//      "launchBrowser": true,
+//      "environmentVariables": {
+//        "ASPNETCORE_ENVIRONMENT": "Development"
+//      },
+//      //"applicationUrl": "https://localhost:49700;http://localhost:49701"
+//      "applicationUrl": "https://localhost:xxxxx;http://localhost:49701"
+//    }
+//  }
+//}
